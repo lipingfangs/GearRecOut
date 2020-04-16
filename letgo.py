@@ -3,7 +3,7 @@ def get_options():
     parser = argparse.ArgumentParser()
     parser.add_argument('-R', '--skipped_columns', action='store',
                         type=str,
-                        default=no,
+                        default="n",
                         help='if you want to remove your recombination region')
     return parser.parse_args()
 
