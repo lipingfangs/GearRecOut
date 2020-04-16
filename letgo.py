@@ -4,6 +4,7 @@ yourinfiledir = sys.argv[1]
 yourmcrdir = sys.argv[2]
 youroutputnamedir = sys.argv[3]
 youroutputname = sys.argv[4]
+selection = ""
 selection  = sys.argv[5]
 
 command0 = "mkdir data"
