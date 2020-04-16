@@ -5,6 +5,22 @@ def get_options():
                         type=str,
                         default="n",
                         help='if you want to remove your recombination region')
+    parser.add_argument('-i', '--inflie', action='store',
+                        type=str,
+                        default="n",
+                        help='if you want to remove your recombination region')
+    parser.add_argument('-m', '--mcrdir', action='store',
+                        type=str,
+                        default="n",
+                        help='if you want to remove your recombination region')
+    parser.add_argument('-o', '--outdir', action='store',
+                        type=str,
+                        default="data",
+                        help='if you want to remove your recombination region')
+    parser.add_argument('-f', '--outfilename', action='store',
+                        type=str,
+                        default="data",
+                        help='if you want to remove your recombination region')
     return parser.parse_args()
 
 if __name__ == "__main__":
@@ -12,10 +28,10 @@ if __name__ == "__main__":
 
     import os
     import sys
-    yourinfiledir = sys.argv[1]
-    yourmcrdir = sys.argv[2]
-    youroutputnamedir = sys.argv[3]
-    youroutputname = sys.argv[4]
+    yourinfiledir = options.inflie
+    yourmcrdir =options.mcrdir
+    youroutputnamedir = options.outdir
+    youroutputname = options.outfilename
     selection = ""
     selection  = options.skippe_dcolumns
 
