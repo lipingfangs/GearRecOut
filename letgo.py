@@ -33,7 +33,7 @@ if __name__ == "__main__":
     youroutputnamedir = options.outdir
     youroutputname = options.outfilename
     selection = ""
-    selection  = options.skippe_dcolumns
+    selection  = options.skipped_columns
 
     os.system("chmod 777 fastGEAR")
 
@@ -41,7 +41,7 @@ if __name__ == "__main__":
     os.system(command0)
 
     command00 = "mv " + yourinfiledir + " data"
-    os.systtem(command00)
+    os.system(command00)
     command1 = "mkdir "+ youroutputnamedir
     command2 = "bash run_fastGEAR.sh "+ yourmcrdir +" "+"data/"+yourinfiledir +" " + youroutputnamedir+"/"+ youroutputname+ " ./fG_input_specs.txt"
     os.system(command1)
