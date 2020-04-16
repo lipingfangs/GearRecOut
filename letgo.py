@@ -13,7 +13,7 @@ os.system(command0)
 command00 = "mv " + yourinfiledir + " data"
 
 command1 = "mkdir "+ youroutputnamedir
-command2 = "./run_fastGEAR.sh "+ yourmcrdir +" "+"data/"+yourinfiledir +" " + youroutputnamedir+"/"+ youroutputname+ " ./fG_input_specs.txt"
+command2 = "bash run_fastGEAR.sh "+ yourmcrdir +" "+"data/"+yourinfiledir +" " + youroutputnamedir+"/"+ youroutputname+ " ./fG_input_specs.txt"
 os.system(command1)
 os.system(command2)
 
